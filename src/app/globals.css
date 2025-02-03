@@ -1,21 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap'); /* Google Fonts */
+
+code, pre, kbd, samp {
+  font-family: 'Fira Code', monospace;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Light Mode (Default) */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark Mode (Uses Tailwind's 'dark' class) */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
+/* Apply Theme */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif; /* Lato as default */
+}
+
+/* Heading Fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
