@@ -64,7 +64,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="bg-gray-900 text-gray-300 pt-20 pb-20 overflow-hidden"
+      className="bg-gray-900 text-gray-300 py-5 overflow-hidden"
     >
       <motion.div
         variants={containerVariants}

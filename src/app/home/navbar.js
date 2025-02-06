@@ -36,8 +36,8 @@ const Navbar = () => {
             <span className="relative z-10">Projects</span>
             <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href="#services" className="text-[#6694c5] text-lg hover:text-white transition duration-300 font-lato relative"> {/* Added href with ID */}
-            <span className="relative z-10">Services</span>
+          <Link href="#contributions" className="text-[#6694c5] text-lg hover:text-white transition duration-300 font-lato relative"> {/* Added href with ID */}
+            <span className="relative z-10">Contributions</span>
             <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link href="#about" className="text-[#6694c5] text-lg hover:text-white transition duration-300 font-lato relative"> {/* Added href with ID */}

@@ -48,9 +48,9 @@ const Topsection = () => {
             </p>
             <motion.button // Animate the button
               variants={itemVariants}
-              className="bg-blue-600 hover:bg-blue-700 transition-all duration-300 text-white font-bold py-3 px-6 rounded-lg shadow-lg"
+              className="bg-purple-900 hover:bg-purple-300 transition-all duration-300 text-white font-bold py-3 px-6 rounded-lg shadow-lg"
             >
-              VIEW PROJECTS
+              Explore
             </motion.button>
 
             {/* Skills & Traits Section (Responsive, Animated) */}
