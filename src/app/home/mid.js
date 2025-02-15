@@ -33,11 +33,11 @@ const ProjectsSection = () => {
       link: "/finance-tracker",
     },
     {
-      title: "Protein Sequence Translator",
+      title: "EvoDist: Codon-Based Evolutionary Distance Predictor",
       description:
-        "A cutting-edge tool for bioinformatics, enabling efficient protein sequence translations.",
+        "A powerful bioinformatics tool for estimating evolutionary distances between species using codon usage patterns.",
       image: "/nucliec.jpeg",
-      link: "/protein-translator",
+      link: "https://github.com/ayush87919/EvoDist",
     },
     {
       title: "Metagenomics Classifier",

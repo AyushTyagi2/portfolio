@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import DeveloperJourney from "./type";
 
 const Topsection = () => {
   const containerVariants = {
@@ -58,9 +59,9 @@ const Topsection = () => {
               variants={itemVariants}
               className="mt-10"
             >
-              <h2 className="text-2xl font-semibold mb-4 text-blue-400 font-montserrat">
+              <h1 className="text-2xl font-semibold mb-4 text-blue-400 font-montserrat">
                 SKILLS & TRAITS
-              </h2>
+              </h1>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {["INNOVATIVE", "TECH-SAVVY", "ADAPTIVE", "PRECISE"].map(
                   (trait, index) => (
@@ -93,6 +94,9 @@ const Topsection = () => {
           </motion.div>
         </div>
       </motion.div>
+      <div className="pt-20 h-70[px]">
+      <DeveloperJourney/>
+      </div>
     </section>
   );
 };

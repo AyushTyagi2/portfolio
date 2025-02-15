@@ -16,20 +16,19 @@ const ContactSection = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
+  
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("http://localhost:5000/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
-
+  
       if (response.ok) {
         setFormData({
           fullName: "",
@@ -40,20 +39,22 @@ const ContactSection = () => {
         });
         alert("Message sent successfully!");
       } else {
-        alert("message sent.don't try again.");
+        alert("Failed to send message. Please try again.");
       }
     } catch (error) {
       alert("An error occurred. Please try again later.");
     }
-
+  
     setLoading(false);
   };
+  
 
   return (
-    <section id="contact" className="bg-gray-900 text-gray-300 py-20">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="bg-gray-900 text-gray-300 ">
+      <div className="container ">
         {/* Hero Section */}
         <div className="relative h-[500px] md:h-[600px] mb-12 overflow-hidden">
+
           <Image src="/coding-Workspace.png" alt="Coding Workspace" layout="fill" objectFit="cover" quality={100} />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
@@ -70,7 +71,7 @@ const ContactSection = () => {
         </div>
 
         {/* Contact Info & Form */}
-        <div className="">
+        <div className="mx-auto px-6">
          
 
           {/* Contact Form */}
@@ -125,7 +126,7 @@ const ContactSection = () => {
               ></textarea>
               <button
                 type="submit"
-                className="bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg w-full md:w-auto transition duration-300"
+                className="bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg w-full md:w-auto transition duration-300 item-center  justify-between"
                 disabled={loading}
               >
                 {loading ? "Sending..." : "Send"}

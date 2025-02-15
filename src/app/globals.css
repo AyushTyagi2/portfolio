@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap'); /* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 code, pre, kbd, samp {
   font-family: 'Fira Code', monospace;
@@ -68,4 +68,8 @@ html {
     transform: translateX(-100%);
     opacity: 0;
   }
+}
+.robot-text {
+  text-shadow: 0px 0px 5px rgba(0, 255, 0, 0.8), 
+               0px 0px 10px rgba(0, 255, 0, 0.6);
 }
