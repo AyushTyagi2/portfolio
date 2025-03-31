@@ -16,36 +16,31 @@ const ContactSection = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+    e.preventDefault(); // Prevent page reload
+    setLoading(true); // Show loading state
   
     try {
-      const response = await fetch("http://localhost:5000/send-email", {
+      const response = await fetch("https://formspree.io/f/myzedaan", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
   
       if (response.ok) {
-        setFormData({
-          fullName: "",
-          email: "",
-          company: "",
-          subject: "",
-          message: "",
-        });
         alert("Message sent successfully!");
+        setFormData({ fullName: "", email: "", company: "", subject: "", message: "" });
       } else {
-        alert("Failed to send message. Please try again.");
+        alert("Failed to send message.");
       }
     } catch (error) {
-      alert("An error occurred. Please try again later.");
+      console.error("Error:", error);
+      alert("An error occurred while sending the message.");
+    } finally {
+      setLoading(false);
     }
-  
-    setLoading(false);
   };
   
 
