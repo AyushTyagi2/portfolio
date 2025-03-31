@@ -131,6 +131,9 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
+      <footer className=" text-white text-center p-4 mt-10">
+      <p>© {new Date().getFullYear()} Your Website. All rights reserved.</p>
+    </footer>
     </section>
   );
 };
