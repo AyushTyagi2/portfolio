@@ -50,7 +50,8 @@ const ContactSection = () => {
         {/* Hero Section */}
         <div className="relative h-[500px] md:h-[600px] mb-12 overflow-hidden">
 
-          <Image src="/coding-Workspace.png" alt="Coding Workspace" layout="fill" objectFit="cover" quality={100} />
+          <Image src="https://drive.google.com/uc?export=view&id=1JSRmyahiOck_A5cYWh0KBQOQ7STkGWhq
+" alt = "get in touch" layout="fill" objectFit="cover" quality={100} />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
