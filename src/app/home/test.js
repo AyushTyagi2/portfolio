@@ -47,12 +47,14 @@ const Topsection = () => {
              
               I'm on a mission to build something extraordinary. 🚀
             </p>
-            <motion.button // Animate the button
-              variants={itemVariants}
-              className="bg-purple-900 hover:bg-purple-300 transition-all duration-300 text-white font-bold py-3 px-6 rounded-lg shadow-lg"
+            <button 
+              className="px-8 py-3 bg-transparent border-2 border-emerald-400 text-emerald-400 font-bold uppercase tracking-wide hover:bg-emerald-400 hover:text-slate-900 transition-all duration-300 hover:scale-105"
+              style={{
+                clipPath: 'polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%)'
+              }}
             >
-              Explore
-            </motion.button>
+              EXPLORE
+            </button>
 
             {/* Skills & Traits Section (Responsive, Animated) */}
             <motion.div // Animate the skills section
@@ -83,12 +85,13 @@ const Topsection = () => {
             variants={itemVariants}
             className="relative w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-lg z-auto md:order-2 order-1"
           >
+            
             <Image
               src="/my.jpg"
               alt="Workspace"
               fill={true}
-              style={{ objectFit: "cover" }}
-              className="rounded-lg"
+              style={{ objectFit: "contain" }}
+              className="rounded"
             />
             <div className="absolute inset-0 bg-black opacity-20"></div>
           </motion.div>

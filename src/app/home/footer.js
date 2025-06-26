@@ -53,22 +53,7 @@ const PortfolioSection = () => {
         </div>
       </div>
 
-        {/* Achievements */}
-        <div className="mb-12 pt-10">
-        <h2 className="text-center text-3xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 font-montserrat">
-          Achievements
-        </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">ML Hackathon</h3>
-              <p>I, along with my team, won an ML hackathon by developing a Python-based app aimed at managing traffic and reducing pollution output. Our solution leveraged machine learning algorithms to analyze real-time traffic data, predict congestion patterns, and suggest optimized routes for vehicles. By integrating environmental factors such as emission levels and fuel consumption, our app provided eco-friendly route recommendations to minimize carbon footprints</p>
-              </div>
-            <div className="bg-gray-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Hackathon Rush</h3>
-              <p>I won my college's Overnight Hackathon twice in a row, demonstrating my ability to think critically and develop innovative solutions under tight deadlines. Competing against top teams, I collaborated to design and implement impactful projects, leveraging my expertise in full-stack development and rapid prototyping.</p>
-            </div>
-          </div>
-        </div>
+       
 
         {/* Developer Journey */}
        
