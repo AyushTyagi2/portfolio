@@ -141,7 +141,7 @@ const HeroSection = () => {
           </div>
           <div className="text-center p-6 bg-slate-800/50 rounded-lg border border-slate-700/50 backdrop-blur-sm hover:border-emerald-400/50 transition-all duration-300">
             <div className="text-3xl font-bold text-emerald-400 font-mono">3rd</div>
-            <div className="text-slate-400 text-sm uppercase tracking-wider">Years B.Tech</div>
+            <div className="text-slate-400 text-sm uppercase tracking-wider">Year B.Tech</div>
           </div>
           <div className="text-center p-6 bg-slate-800/50 rounded-lg border border-slate-700/50 backdrop-blur-sm hover:border-emerald-400/50 transition-all duration-300">
             <div className="text-3xl font-bold text-emerald-400 font-mono">100%</div>

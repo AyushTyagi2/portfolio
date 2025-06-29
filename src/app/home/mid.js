@@ -26,11 +26,11 @@ const ProjectsSection = () => {
       link: "https://github.com/ayush87919/Project_CS201.git",
     },
     {
-      title: "Finance Tracker",
+      title: "Larry - A versatile language agent",
       description:
-        "A mobile application with an intuitive interface and seamless user experience, designed for financial management.",
-      image: "/money.jpeg",
-      link: "/finance-tracker",
+        "Larry is a prototype for a bigger project jarvis.ai which is one of the most ambitious project of mine.",
+      image: "/jarvis.jpg",
+      link: "https://github.com/AyushTyagi2/Larry",
     },
     {
       title: "EvoDist: Codon-Based Evolutionary Distance Predictor",
@@ -40,11 +40,11 @@ const ProjectsSection = () => {
       link: "https://github.com/ayush87919/EvoDist",
     },
     {
-      title: "Metagenomics Classifier",
+      title: "Aneurysm Detector",
       description:
-        "An AI-driven metagenomics classifier for accurate bacterial and viral genome identification.",
-      image: "/metagenome.jpeg",
-      link: "/metagenomics-classifier",
+        "An AI-driven aneurysm detector for accurate aneurysm detection and rupture prediction.",
+      image: "/aneurysm.jpg",
+      link: "https://github.com/AyushTyagi2/Aneurysms_Detection.git",
     },
   ];
 

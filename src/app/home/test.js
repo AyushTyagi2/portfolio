@@ -39,7 +39,7 @@ const Topsection = () => {
             className="md:order-1 order-2"
           >
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6 font-montserrat">
-              PASSIONATE COMPUTER <br /> SCIENCE MAJOR <br /> SHOWCASING WORK.
+              PASSIONATE COMPUTER <br /> SCIENCE MAJOR
             </h1>
             <p className="text-lg mb-6 opacity-80 font-lato leading-relaxed">
             I'm a deeply passionate coder and innovator, always striving to create impactful projects that blend creativity with functionality.
